@@ -13,3 +13,8 @@
 
 - Threadripper 1900x, GTX 980ti using 16 PCIe3.0 lanes: 1.5 minutes
 - Threadripper 1900x (8 cores, 16 HT, 3.8GHz Core Boost Disabled, NUMA mode), CPU only: 0.15 minutes
+
+Minimal Stan model compilation:
+
+- i7-2760QM (4 cores, 8HT, 2.4GHz, no TurboBoost), g++: 55 seconds
+- i7-2760QM (4 cores, 8HT, 2.4GHz, no TurboBoost), clang++: 35 seconds
