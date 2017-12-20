@@ -37,3 +37,8 @@ Linear regression, as in `mp-test/tf.py` using NGC Docker Tensorflow image `17.1
 
   - Titan V: 14 seconds
   - GTX 980ti: 42 seconds
+  
+- `steps=1000, nin=8191, nout=8191, nbatch=511` (**not** mutliples of `8`):
+
+  - Titan V: 25 seconds
+  - GTX 980ti: 43 seconds
