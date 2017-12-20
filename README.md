@@ -20,3 +20,20 @@ Minimal Stan model compilation:
 - i7-2760QM (4 cores, 8HT, 2.4GHz, no TurboBoost), clang++: 35 seconds
 - Threadripper 1900x (8 cores, 16 HT, 3.8GHz Core Boost Enabled, NUMA mode), clang++4.0: 42 seconds
 - Threadripper 1900x (8 cores, 16 HT, 3.8GHz Core Boost Enabled, NUMA mode), g++ 5.4.0: 38 seconds
+
+Linear regression, as in `mp-test/tf.py` using NGC Docker Tensorflow image `17.12`:
+
+- `steps=30000, nin=8192, nout=512, nbatch=64`
+
+  - Titan V : 55 seconds
+  - GTX 980ti: 67 seconds
+  
+- `steps=1000, nin=8192, nout=8192, nbatch=64`:
+
+  - Titan V: 9 seconds
+  - GTX 980ti: 19 seconds
+
+- `steps=1000, nin=8192, nout=8192, nbatch=512`:
+
+  - Titan V: 14 seconds
+  - GTX 980ti: 42 seconds
